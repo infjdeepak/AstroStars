@@ -106,6 +106,7 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
+  margin: 5rem 0;
 }
 .intro-text h1 {
   font-weight: 700;
@@ -123,7 +124,7 @@ nav {
   text-align: center;
 }
 .intro-img img {
-  max-height: 70vh;
+  max-height: 50rem;
   -webkit-animation: threesixty 2s timing-function infinite direction ease-in-out;
           animation: threesixty 2s timing-function infinite direction ease-in-out;
   -webkit-animation: threesixty 60s infinite linear;
