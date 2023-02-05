@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #110223;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+div,
+span,
+p,
+input,
+button,
+a {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.main-head {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background: rgba(224, 91, 241, 0.103);
+}
+
+nav {
+  min-height: 10vh;
+  padding: 1rem 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+}
+
+.github-logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.github-logo img {
+  height: 3rem;
+}
+
+.intro-section {
+  padding: 5%;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  background: radial-gradient(#311555, #110223);
+}
+
+.intro-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+.intro-text h1 {
+  font-weight: 700;
+}
+.intro-text p {
+  color: rgba(245, 245, 245, 0.767);
+  padding: 2rem 0;
+}
+
+.intro-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  pointer-events: none;
+  text-align: center;
+}
+.intro-img img {
+  max-height: 70vh;
+  -webkit-animation: threesixty 2s timing-function infinite direction ease-in-out;
+          animation: threesixty 2s timing-function infinite direction ease-in-out;
+  -webkit-animation: threesixty 60s infinite linear;
+          animation: threesixty 60s infinite linear;
+}
+
+@-webkit-keyframes threesixty {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes threesixty {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.zodiac-section {
+  width: 90%;
+  margin: auto;
+  padding: 5% 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.zodiac-head {
+  min-height: 10vh;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.zodiac-head h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.zodiac-signs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.sign {
+  border-radius: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  background: rgb(57, 22, 65);
+  background: -webkit-gradient(linear, left top, left bottom, from(#311555), to(#110223));
+  background: linear-gradient(#311555, #110223);
+  color: whitesmoke;
+  cursor: pointer;
+}
+.sign h4 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.sign-img {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  background: #b8eac7;
+}
+.sign-img img {
+  max-width: 6rem;
+  height: auto;
+  position: relative;
+  -webkit-filter: drop-shadow(0px 10px 20px rgb(41, 2, 41));
+          filter: drop-shadow(0px 10px 20px rgb(41, 2, 41));
+}
+
+.sign:hover img {
+  -webkit-animation: animationImg 0.6s infinite linear alternate;
+          animation: animationImg 0.6s infinite linear alternate;
+}
+
+@-webkit-keyframes animationImg {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes animationImg {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+.horoscope-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  padding: 15vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.horoscope-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.horoscope {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4rem;
+}
+
+.horoscope-head {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  text-align: start;
+}
+.horoscope-head span {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.horoscope-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 20rem;
+          flex: 2 1 20rem;
+  margin: 2rem 0;
+}
+
+.horoscope-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+.horoscope-btn button {
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  color: whitesmoke;
+  background: -webkit-gradient(linear, right top, left top, from(#442b64), to(#34066d));
+  background: linear-gradient(right, #442b64, #34066d);
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+.horoscope-btn button:hover {
+  background: #34066d;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 2rem;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2rem 5%;
+  background: rgba(224, 91, 241, 0.103);
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.footer-text span {
+  font-size: inherit;
+  color: rgb(241, 231, 229);
+}
+.footer-text a {
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 53%;
+  }
+}

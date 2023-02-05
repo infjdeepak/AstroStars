@@ -1,0 +1,21 @@
+footer {
+  padding: 2rem 5%;
+  background: rgba(224, 91, 241, 0.103);
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  span {
+    font-size: inherit;
+    color: rgb(241, 231, 229);
+  }
+  a {
+    text-decoration: underline;
+    font-size: inherit;
+  }
+}

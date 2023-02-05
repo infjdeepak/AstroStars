@@ -1,0 +1,46 @@
+$header1: 5rem;
+$header2: 4rem;
+$header3: 3rem;
+$header4: 2rem;
+$text: 2.5rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #110223;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+div,
+span,
+p,
+input,
+button,
+a {
+  font-size: $text;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}

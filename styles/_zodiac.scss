@@ -1,0 +1,75 @@
+.zodiac-section {
+  width: 90%;
+  margin: auto;
+  padding: 5% 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.zodiac-head {
+  min-height: 10vh;
+  width: 100%;
+  margin-bottom: 5%;
+  h2 {
+    font-size: $header1;
+    // font-family: lobster, "cursive";
+    text-align: center;
+    // font-weight: 500;
+  }
+}
+
+.zodiac-signs {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  // align-items: center;
+
+  // align-content: center;
+  gap: 2rem;
+}
+.sign {
+  border-radius: 2rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  // background: #b8eac7;
+  background: rgb(57, 22, 65);
+  background: linear-gradient(#311555, #110223);
+  color: whitesmoke;
+  cursor: pointer;
+  h4 {
+    font-size: $header3;
+    font-weight: 500;
+  }
+}
+.sign-img {
+  border-radius: 50%;
+  display: flex;
+  padding: 1rem;
+  background: #b8eac7;
+  img {
+    max-width: 6rem;
+    height: auto;
+    position: relative;
+    filter: drop-shadow(0px 10px 20px rgb(41, 2, 41));
+  }
+}
+
+.sign:hover {
+  img {
+    animation: animationImg 0.6s infinite linear alternate;
+  }
+}
+@keyframes animationImg {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
